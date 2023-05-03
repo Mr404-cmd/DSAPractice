@@ -2,8 +2,8 @@ class Stack{
     constructor(){
         this.items = [];
     }
-    push(element){
-        this.items.push(element);
+    push(item){
+        this.items.push(item);
     }
     pop(){
         if(this.items.length === 0) return "underflow";
