@@ -10,9 +10,9 @@ const permutations = (ele) => {
   allPermutationsWithoutFirst.forEach((val) => {
     for (let i = 0; i <= val.length; i++) {
       const permWithFirst = [...val.slice(0, i), firstVal, ...val.slice(i)];
-      allPermutation.push(permWithFirst);
+      allPermutation.push(permWithFirst.join(""));
     }
   });
   return allPermutation;
 };
-permutations([1, 2, 3]);
+console.log(permutations("shu"));
